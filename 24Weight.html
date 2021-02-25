@@ -1,0 +1,226 @@
+<html lang="en">
+
+<head>
+
+<title> Calculus Conversi </title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+
+
+
+<style type="text/css">
+
+  body{
+  margin-top:100px;
+  background:#8FBC8F;
+  color:#fff;
+}
+.bs-example{
+      color:#FFF;
+    }
+     .margin1{
+      margin-top:250px;
+      margin-left:140px;
+        font-family: Segoe UI;
+  text-transform: uppercase;
+  font-weight: bold;
+    }
+  .navbar-nav a {
+  font-family: Segoe UI;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navbar-light .navbar-brand {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar-nav {
+  text-align: center;
+}
+.nav-link {
+  padding: .2rem 1rem;
+}
+.nav-link.active, .nav-link:focus {
+  color: #fff;
+}
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+  background: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #000;
+}
+.w-100 {
+  height: 100vh;
+}
+@media only screen and (max-width: 767px) {
+  .navbar-nav.ml-auto {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .navbar-nav a {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+.big-title{
+  margin-top:180px;
+  }
+
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Calculus Conversi</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="D:\Home Page.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+     <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contents</a>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Time</a>
+                <a href="#" class="dropdown-item">Temperature</a>
+                <a href="D:\24Length.html" class="dropdown-item">Length</a>
+                <a href="D:\24Weight.html"class="dropdown-item">Weight</a>
+                <div class="dropdown-divider"></div>
+                <a href="#"class="dropdown-item">Trash</a>
+            </div>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h1 class="display-4 text-center mt-3">Calculus Conversi
+        <small class="text-muted">Beta</small>
+      </h1>
+      <form>
+        <div class="form-group">
+          <input id="kgInput" type="number" class="form-control form-control-lg" placeholder="Enter Kilograms...">
+        </div>
+      </form>
+
+      <div id="output">
+        <div class="card bg-primary mb-2">
+          <div class="card-body" >
+            <span data-tooltip="Multiply the value by 1,000">
+              <h4>Gram(g):</h4>
+            <div id="gramsOutput"></div>
+            </span>
+      
+          </div>
+
+        </div>
+
+        <div class="card bg-success mb-2">
+          <div class="card-body">
+             <span data-tooltip="Multiply the value by 2.2046">
+            <h4>Pound(lbs):</h4>
+            <div id="lbsOutput"></div>
+        </span>
+            
+        </div>
+
+    </div>
+
+        <div class="card bg-danger mb-2">
+          <div class="card-body">
+               <span data-tooltip="Multiply the value by 35.274">
+            <h4>Ounce(oz):</h4>
+            <div id="ozOutput"></div>
+                          </span>
+
+        </div>
+
+    </div>
+
+               <div class="card bg-warning mb-2">
+          <div class="card-body">
+              <span data-tooltip="Multiply the value by 1,000,000">
+            <h4>Miligram(mg):</h4>
+            <div id="mgOutput"></div>
+        </span>
+
+          </div>
+
+        </div>
+
+      <div class="card bg-secondary mb-2">
+          <div class="card-body">
+                      <span data-tooltip="Divide the value by 1,000">
+            <h4>Tonne(T):</h4>
+            <div id="tOutput"></div>
+            </span>
+
+          </div>
+
+        </div>
+
+       </div>
+
+    </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script type="text/javascript">
+  document.getElementById("output").style.visibility = "hidden";
+document.getElementById("kgInput").addEventListener("input", function(e) {
+  document.getElementById("output").style.visibility = "visible";
+  let kg = e.target.value;
+  document.getElementById("gramsOutput").innerHTML = kg * 1000;
+  document.getElementById("lbsOutput").innerHTML = kg * 2.2046;
+  document.getElementById("ozOutput").innerHTML = kg * 35.274;
+  document.getElementById("mgOutput").innerHTML = kg * 1000000;
+ document.getElementById("tOutput").innerHTML = kg / 1000;
+});
+</script>
+
+</body>
+
+</html>
